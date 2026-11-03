@@ -1,0 +1,39 @@
+# Settings for this webrarian collection. Every key is described in
+# vignette("config-reference", package = "webrarian"). settings_set(),
+# acquire_*() and withdraw_*() rewrite this file, so comments are not kept.
+project:
+  name: Regressão linear com interação
+  description: Fisioterapia x idade sobre a recuperação (dados sintéticos)
+webr:
+  version: 0.6.0
+packages:
+  prebuilt: []
+  repos: []
+  github: []
+  local: []
+  dependencies: true
+files:
+  include:
+  - data/
+  - scripts/
+  - scripts/*.R
+  exclude:
+  - '**/*.Rhistory'
+  - '**/.DS_Store'
+  mount-point: /home/web_user
+repl:
+  startup-script: scripts/init.R
+  auto-open: ~
+  auto-run: []
+  share-links: open
+  panels:
+    editor: true
+    terminal: true
+    files: true
+    plot: true
+    environment: true
+build:
+  output-dir: _site
+  offline: false
+  bundle-engine: false
+  clean: true

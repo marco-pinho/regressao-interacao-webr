@@ -37,3 +37,4 @@ build:
   offline: false
   bundle-engine: false
   clean: true
+  service-worker: true
